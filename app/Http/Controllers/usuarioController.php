@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\usuarioModel;
+use App\User;
 
 class usuarioController extends Controller
 {
@@ -36,12 +37,18 @@ class usuarioController extends Controller
      */
     public function store(Request $request)
     {
-        User::create([
+        /*User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-        ]);
+        ]);*/
         
+        
+        $user = new User;
+        $user->name = $request->nombre;
+        $user->email = $request->email;
+        $user->password = bcrypt($request->contrasenia);
+        $user->save();
         
         $usuario = new usuarioModel;
         $usuario->id = $request->id;
