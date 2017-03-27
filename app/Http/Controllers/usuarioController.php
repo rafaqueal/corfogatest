@@ -36,7 +36,7 @@ class usuarioController extends Controller
      */
     public function store(Request $request)
     {
-        $user = new User;
+        $user = new userModel;
         $user->name = $request->nombre;
         $user->password = bcrypt($request->contrasenia);
         $user->email = $request->email;
