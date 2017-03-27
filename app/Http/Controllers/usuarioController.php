@@ -39,7 +39,7 @@ class usuarioController extends Controller
         $usuario = new usuarioModel;
         $usuario->id = $request->id;
         $usuario->nombre = $request->nombre;
-        $usuario->contrasenia = $request->contrasenia;
+        $usuario->contrasenia = bcrypt($request->contrasenia);
         $usuario->email = $request->email;
         $usuario->telefono = $request->telefono;
         $usuario->save();
