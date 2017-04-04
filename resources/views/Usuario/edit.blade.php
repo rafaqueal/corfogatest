@@ -59,7 +59,7 @@
                                       <div class="col-md-3">
                                           <select class="form-control" id="rol" control-label" name="rol">
                                             <option>admin</option>
-                                            <option>ganadero</option>
+                                            <option>criador</option>
                                             <option>inspector</option>
                                           </select>
                                        </div>
