@@ -118,7 +118,7 @@ class usuarioController extends Controller
     {
         
         $usuario = usuarioModel::find($id);
-        $user = User::find('alberto@gmail.com');
+        $user = User::find($usuario->email);
         $user->delete();
         $usuario->delete();
         return redirect('../usuario')->with('message','data has been deleted!');
