@@ -19,7 +19,7 @@ class CreateUsuariosTable extends Migration
             $table->string('contrasenia')->nullable();
             $table->string('email')->nullable();
             $table->integer('telefono')->nullable();
-            $table->enum('rol', ['admin', 'ganadero', 'inspector']);
+            $table->enum('rol', ['admin', 'criador', 'inspector']);
             $table->timestamps();
 
             $table->primary('id');
