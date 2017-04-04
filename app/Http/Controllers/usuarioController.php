@@ -116,10 +116,16 @@ class usuarioController extends Controller
      */
     public function destroy($id)
     {
+
         
         $usuario = usuarioModel::find($id);
-        $user = User::find($usuario->email);
-        $user->destroy();
+        /*$user = User::;
+        $user->destroy();*/
+        $user = JWTAuth::find($usuario->email)->parseToken()->authenticate();
+        if($user){
+            $user->delete();
+        }
+        
         $usuario->delete();
         return redirect('../usuario')->with('message','data has been deleted!');
     }
