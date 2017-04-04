@@ -118,8 +118,6 @@ class usuarioController extends Controller
     {
         
         $usuario = usuarioModel::find($id);
-        $usuario->email = $request->email;
-       
         $user = User::find($usuario->email);
         $user->delete();
         $usuario->delete();
