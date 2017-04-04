@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\usuarioModel;
 use App\User;
 
+
 class usuarioController extends Controller
 {
     /**
@@ -115,6 +116,8 @@ class usuarioController extends Controller
      */
     public function destroy($id)
     {
+        $user = User::find($id);
+        $user->delete();
         $usuario = usuarioModel::find($id);
         $usuario->delete();
         return redirect('../usuario')->with('message','data has been deleted!');
