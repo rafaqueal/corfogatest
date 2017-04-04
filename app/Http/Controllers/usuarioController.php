@@ -120,9 +120,9 @@ class usuarioController extends Controller
 
         
         $usuario = usuarioModel::find($id);
-        /*$user = User::;
-        $user->destroy();*/
-        $user = JWTAuth::find($usuario->email)->parseToken()->authenticate();
+        $user = User::find($usuario->email);
+        //$user->destroy();
+        $user = JWTAuth::parseToken()->authenticate();
         if($user){
             $user->delete();
         }
