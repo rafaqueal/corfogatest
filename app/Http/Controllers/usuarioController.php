@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\usuarioModel;
 use App\User;
+use JWTAuth;
 
 
 class usuarioController extends Controller
