@@ -30,7 +30,7 @@
                                     <label for="email" class="col-md-2 control-label">Correo electonico</label>
 
                                     <div class="col-md-6">
-                                        <input class="form-control" type="text" name="email" value="" placeholder="Correo electronico">
+                                        <input class="form-control" type="text" name="email" value="" placeholder="Correo electronico" required>
                                         {{ ($errors->has('email')) ? $errors->first('email') : '' }}
                                     </div>
                                 </div>
@@ -40,7 +40,7 @@
                                     <label for="contrasenia" class="col-md-2 control-label">Contraseña</label>
 
                                     <div class="col-md-6">
-                                        <input class="form-control" type="text" name="contrasenia" value="" placeholder="Contraseña">
+                                        <input class="form-control" type="password" name="contrasenia" value="" placeholder="Contraseña" required>
                                         {{ ($errors->has('contrasenia')) ? $errors->first('contrasenia') : '' }}
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
                                     <label for="id" class="col-md-2 control-label">Identidicador</label>
 
                                     <div class="col-md-4">
-                                        <input class="form-control" type="text" name="id" value="" placeholder="Identificador">
+                                        <input class="form-control" type="text" name="id" value="" placeholder="Identificador" required>
                                         {{ ($errors->has('id')) ? $errors->first('id') : '' }}
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@
                                     <label for="telefono" class="col-md-2 control-label">Telefono</label>
 
                                     <div class="col-md-4">
-                                        <input class="form-control" type="text" name="telefono" value="" placeholder="Formato sin guíon">
+                                        <input class="form-control" type="tel" name="telefono" value="" placeholder="Formato sin guíon" required>
                                         {{ ($errors->has('telefono')) ? $errors->first('telefono') : '' }}
                                     </div>
                                 </div>
