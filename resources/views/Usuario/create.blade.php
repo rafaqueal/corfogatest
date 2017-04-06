@@ -30,7 +30,7 @@
                                     <label for="email" class="col-md-2 control-label">Correo electonico</label>
 
                                     <div class="col-md-6">
-                                        <input class="form-control" type="text" name="email" value="" placeholder="Correo electronico" required>
+                                        <input class="form-control" type="email" name="email" value="" placeholder="Correo electronico" required>
                                         {{ ($errors->has('email')) ? $errors->first('email') : '' }}
                                     </div>
                                 </div>
