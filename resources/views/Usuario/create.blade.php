@@ -20,7 +20,7 @@
                                     <label for="nombre" class="col-md-2 control-label">Nombre</label>
 
                                     <div class="col-md-6">
-                                        <input class="form-control" type="text" name="nombre" value="" placeholder="Nombre Completo">
+                                        <input class="form-control" type="text" name="nombre" value="" placeholder="Nombre Completo" required>
                                         {{ ($errors->has('nombre')) ? $errors->first('nombre') : '' }}
                                     </div>
                                 </div>
