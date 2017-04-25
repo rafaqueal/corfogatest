@@ -21,7 +21,7 @@
 	             <label for="fecha_emitido" class="col-md-2 control-label">Fecha Emitido</label>
 
 	                <div class="col-md-5">
-	                	<input class="form-control" type="date" name="fecha_emitido" value="" >
+	                	<input class="form-control" type="date" name="fecha_emitido" value="" required>
 	               </div>
             </div>
 
@@ -33,7 +33,7 @@
                 <label for="propietario" class="col-lg-2 control-label">Nombre</label>
                     <div class="col-lg-5">
                          <input type="propietario" class="form-control" id="propietario" name="propietario"
-                                         placeholder="Propietario">
+                                         placeholder="Propietario" required>
                     </div>
             </div>
 
@@ -43,7 +43,7 @@
               	<label for="Codigo" class="col-lg-2 control-label">Código</label>
 	            
 	            <div class="col-lg-5">
-	             	<input type="codigo" class="form-control" id="codigo" placeholder="Código" name="codigo">
+	             	<input type="codigo" class="form-control" id="codigo" placeholder="Código" name="codigo" required>
 	            </div>
 
            </div>
