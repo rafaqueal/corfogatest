@@ -75,3 +75,9 @@ Route::resource('animales', 'animalesController',
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+
+
+
+
+Route::get('/inspeccion', 'inspeccionController@index');

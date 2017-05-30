@@ -17,7 +17,7 @@ class animalModel extends Model
      
      */
     
-     protected $table = 'animales';
+    protected $table = 'animales';
     protected $fillable = [
         'registro','codigo','nombre','raza','fecha_nacimiento','sexo','origen_reproductivo','fecha_destete','foto',
     ];

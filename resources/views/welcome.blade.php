@@ -199,7 +199,7 @@
             
 
                     <li>
-                        <a href="#"><i class="fa fa-list-alt"></i> Reporte de Pedrigrí </a>
+                        <a href="/inspeccion"><i class="fa fa-list-alt"></i> Reporte Inspecciones</a>
                     </li>
 
 
@@ -225,7 +225,6 @@
                         <li>
                             <a href="#"><i class="fa fa-users"></i> Adm Usuarios</a>
                         </li>
-
                         <li>
                             <a href="{{ url('/logout') }}" onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();"><i class="fa fa-fw fa-power-off"></i> Cerrar Sesión</a>

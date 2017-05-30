@@ -19,7 +19,7 @@ class inspeccionModel extends Model
      
      */
     
-     protected $table = 'inspecciones';
+    protected $table = 'inspecciones';
     protected $fillable = [
 		'id','fecha','finca_id','num_visita',
     ];
