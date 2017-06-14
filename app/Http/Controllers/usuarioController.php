@@ -130,4 +130,14 @@ class usuarioController extends Controller
         $usuario->delete();
         return redirect('../usuario')->with('message','data has been deleted!');
     }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function about()
+    {
+        return view('about');
+    }
 }

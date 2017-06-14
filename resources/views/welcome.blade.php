@@ -237,6 +237,9 @@
                         <li>
                             <a href="#"><i class="fa fa-fw fa-gear"></i> Ajustes </a>
                         </li>
+                        <li>
+                            <a href="/about"><i class="glyphicon glyphicon-question-sign"></i>  Acerca de </a>
+                        </li>
 
                     </ul>
                 </div>

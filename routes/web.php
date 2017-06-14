@@ -75,6 +75,7 @@ Route::resource('animales', 'animalesController',
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/about', 'usuarioController@about');
 
 
 
